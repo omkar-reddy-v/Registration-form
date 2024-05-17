@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success</title>
+    <style>
+        :root {
+            --gradient-shadow: linear-gradient(45deg,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000);
+        }
+        body{
+            background-color: lightgray;
+        }
+        
+        div{
+            text-decoration: none;
+            position: relative;
+            left: 30%;
+            top:200px;
+            padding: 20px;
+            margin-top: 90px;
+            color: lightgray;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            width: 450px;
+            height: 30px;
+            background: linear-gradient(0deg, gray, brown);
+            border-radius: 2rem;
+        }
+
+        div:before,
+        div:after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background: var(--gradient-shadow);
+            border-radius: 2rem;
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
+        }
+
+        div:after {
+            filter: blur(20px);
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 300% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+        button{
+            background-color: black;
+            color: whitesmoke;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 1rem;
+            position: relative;
+            top: 250px;
+            left: 130vh;
+            cursor: pointer;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Registration successfuly done.....</div>
+    <a href="http://127.0.0.1:5500/index.html"><button>Back To Home</button></a>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+:root {
+	--gradient-shadow: linear-gradient(45deg,
+			#fb0094,
+			#0000ff,
+			#00ff00,
+			#ffff00,
+			#ff0000,
+			#fb0094,
+			#0000ff,
+			#00ff00,
+			#ffff00,
+			#ff0000);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.images {
+	width: 50vh;
+	height: 50vh;
+	position: relative;
+	top: 50px;
+}
+
+.animation {
+	text-decoration: none;
+	position: relative;
+	left: 50%;
+	margin-top: 90px;
+	color: lightgray;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	width: 150px;
+	height: 30px;
+	background: linear-gradient(0deg, lightblue, #262626);
+	border-radius: 2rem;
+}
+
+.animation:before,
+.animation:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	border-radius: 2rem;
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.animation:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 300% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	z-index: 2;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: relative;
+	bottom: 60px;
+	left: 1000px;
+	font-size: 15px;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 16px;
+	color: black;
+
+}
+
+.navbar a:hover {
+	color: #5805ff;
+}
+
+#menu-icon {
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+
+#home {
+	display: flex;
+	flex-direction: column;
+}
+
+.home {
+	display: flex;
+	margin-bottom: 80px;
+	gap: 50px;
+}
+
+.basic {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid whitesmoke;
+	background-color: lightgray;
+	border-radius: 2rem;
+	margin-bottom: 30px;
+	color: gray;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bolder;
+}
+
+span {
+	color: red;
+}
+
+.fullname {
+	text-align: start;
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#registration label {
+	position: relative;
+	top: 40px;
+	right: 180px;
+	color: gray;
+}
+
+#registration input {
+	height: 20px;
+	padding: 8px;
+	margin-bottom: 50px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+#registration input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.first {
+	display: flex;
+	margin-top: 50px;
+}
+
+.first input {
+	height: 20px;
+	width: 300px;
+	padding: 8px;
+	margin-bottom: 50px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.first label {
+	position: relative;
+	bottom: 30px;
+	right: 315px;
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.first input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.birth {
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 50px;
+}
+
+.second {
+	display: flex;
+}
+
+.second input {
+	height: 20px;
+	padding: 8px;
+	margin-bottom: 50px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.second input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.second label {
+	position: relative;
+	bottom: 30px;
+	width: 100px;
+	right: 180px;
+	color: gray;
+}
+
+.present {
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 10px;
+}
+
+.third1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.third1 input {
+	height: 20px;
+	width: 100vh;
+	padding: 8px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.third1 input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.third1 label {
+	color: gray;
+}
+
+.third2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.third2 input {
+	height: 20px;
+	width: 100vh;
+	padding: 8px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.third2 input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.third2 label {
+	color: gray;
+}
+
+.third3 {
+	display: flex;
+}
+
+.third3 input {
+	height: 20px;
+	padding: 8px;
+	position: relative;
+	right: 25px;
+	margin-bottom: 70px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.third3 input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.third3 label {
+	color: gray;
+	position: relative;
+	top: 60px;
+	left: 150px;
+}
+
+.third4 {
+	display: flex;
+}
+
+.third4 input {
+	height: 20px;
+	padding: 8px;
+	position: relative;
+	right: 110px;
+	margin-bottom: 70px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.third4 input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.third4 label {
+	color: gray;
+	position: relative;
+	top: 60px;
+	left: 70px;
+}
+
+.emergency {
+	font-weight: bolder;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 20px;
+}
+
+.fourth {
+	display: flex;
+}
+
+.fourth input {
+	height: 20px;
+	padding: 8px;
+	position: relative;
+	margin-bottom: 70px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.fourth input:hover {
+	border: 2px solid lightseagreen;
+
+}
+
+.fourth label {
+	position: relative;
+	top: 60px;
+	right: 180px;
+	color: gray;
+}
+
+.relastion {
+	display: flex;
+	flex-direction: column;
+	margin-left: 100vh;
+	position: relative;
+	bottom: 140px;
+}
+
+.relastion input {
+	height: 20px;
+	width: 300px;
+	padding: 8px;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.relastion input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.emergencynumber {
+	display: flex;
+	flex-direction: column;
+}
+
+.emergencynumber input {
+	height: 20px;
+	width: 300px;
+	padding: 8px;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 0.5rem;
+	border: 2px solid lightgray;
+	outline: none;
+}
+
+.emergencynumber input:hover {
+	border: 2px solid lightseagreen;
+}
+
+.academic {
+	color: gray;
+	border: 1px solid whitesmoke;
+	background-color: lightgray;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 10px;
+	border-radius: 2rem;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.course {
+	display: flex;
+	flex-direction: column;
+}
+
+.course label {
+	color: gray;
+	margin-bottom: 10px;
+}
+
+.course select {
+	width: 300px;
+	margin-bottom: 10px;
+	height: 40px;
+	text-align: center;
+	outline: none;
+	border-radius: 1rem;
+	border: 1px solid lightgray;
+	background-color: lightgray;
+}
+
+.course select:hover {
+	border: 3px solid lightblue;
+}
+
+#submit {
+	width: 160px;
+	height: 40px;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	background-color: black;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-radius: 1rem;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#submit:hover {
+	background-color: lightgreen;
+	color: black;
+}
+
+#reset {
+	width: 160px;
+	height: 40px;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	background-color: black;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-radius: 1rem;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#reset:hover {
+	background-color: red;
+	color: whitesmoke;
+}
+
+.contact {
+	background-color: rgb(11, 11, 26);
+	color: whitesmoke;
+	height: 150px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.con-container h3 {
+	margin-left: 30px;
+}
+
+.con-container li {
+	color: #262626;
+}
+
+.con-container i {
+	font-size: 8px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.con-container a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info {
+	margin-left: 300px;
+}
+
+p {
+	position: relative;
+	left: 300px;
+}
