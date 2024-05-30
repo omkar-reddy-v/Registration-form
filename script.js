@@ -31,3 +31,13 @@ function addOption(selectElement, value, label) {
     option.textContent = label;
     selectElement.appendChild(option);
 }
+
+
+let menu = document.querySelector("#menu-icon");  
+  menu.onclick = () => {
+    navbar.classList.toggle("show");
+  };
+  
+  window.onscroll = () => {
+    navbar.classList.remove("show");
+  };

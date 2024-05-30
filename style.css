@@ -94,6 +94,9 @@ header {
 	left: 1000px;
 	font-size: 15px;
 }
+ul{
+	list-style: none;
+}
 
 .navbar a {
 	text-decoration: none;
@@ -531,4 +534,216 @@ span {
 p {
 	position: relative;
 	left: 300px;
+}
+
+@media (max-width:990px){
+	.navbar{
+		position: relative;
+		left: 200px;
+		bottom: 45px;
+		}
+	.first label {
+			position: relative;
+			bottom: 30px;
+			right: 280px;
+			font-size: 14px;
+	}
+	.relastion{
+		position: relative;
+		right: 100px;
+	}
+}
+@media (max-width:800px){
+	form{
+		width: 300px;
+	}
+	.first{
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.first label{
+		position: relative;
+		bottom: 120px;
+		right: 0px;
+	}
+	.relastion {
+		display: flex;
+		flex-direction: column;
+		bottom: 80px;
+		margin-top: 150px;
+		margin-left: 100px;
+	
+	}
+	.second {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.second input {
+		height: 20px;
+		padding: 8px;
+		margin-bottom: 50px;
+		border-radius: 0.5rem;
+		border: 2px solid lightgray;
+		outline: none;
+	}
+	
+	.second input:hover {
+		border: 2px solid lightseagreen;
+	}
+	
+	.second label {
+		position: relative;
+		bottom: 110px;
+		right: 0px;
+		width: 100px;
+		color: gray;
+	}
+	.third3 {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.third3 input {
+		position: relative;
+		right: 0px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		border-radius: 0.5rem;
+		border: 2px solid lightgray;
+		outline: none;
+	}
+	
+	.third3 input:hover {
+		border: 2px solid lightseagreen;
+	}
+	
+	.third3 label {
+		color: gray;
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	.third4 {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.third4 input {
+		height: 20px;
+		padding: 8px;
+		position: relative;
+		right: 0px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.third4 label {
+		position: relative;
+		top: 10px;
+		left: 	0px;
+	}
+	.fourth {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.fourth input {
+		position: relative;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	.fourth label {
+		position: relative;
+		bottom: 90px;
+		top: 0px;
+		right: 0px;
+	}
+	.contact {
+		width: 120vh;
+		height: 150px;
+		margin-top: 20px;
+		display: flex;
+	}
+}
+@media(max-width:600px){
+	header{
+		display: flex;
+	}
+	.navbar {
+        display: none;
+		position: relative;
+		top: 10px;
+		left: -10px;
+    }
+	.navbar.active {
+		top: 100%;
+	  }
+	.navbar a {
+		position: relative;
+		width: 180px;
+		padding: 1.5rem;
+		display: block;
+		background: white;
+	}
+
+    .show {
+        display: block;
+    }
+    #menu-icon {
+        display: block;
+		position: relative;
+		top: 30px;
+		left: 250px;
+    }
+	.info {
+		margin-left: 120px;
+	}
+	
+	p {
+		position: relative;
+		left: 120px;
+	}
+}
+@media (max-width:500px){
+	#menu-icon {
+        display: block;
+		position: relative;
+		top: 30px;
+		left: 120px;
+    }
+	#registration input{
+		height: 15px;
+		padding: 6px;
+	}
+	.first input{
+		height: 15px;
+		padding: 6px;
+	}
+	.second input{
+		height: 15px;
+		padding: 6px;
+	}
+	.third1 input{
+		height: 15px;
+		width: 50vh;
+		padding: 6px;
+	}
+	.third2 input{
+		height: 15px;
+		width: 50vh;
+		padding: 6px;
+	}
+	.third3 input{
+		height: 15px;
+		padding: 6px;
+	}
+	.third4 input{
+		height: 15px;
+		padding: 6px;
+	}
+	.home{
+		display: flex;
+		flex-direction: column;
+	}
 }
